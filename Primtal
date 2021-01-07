@@ -1,0 +1,12 @@
+num = int(input("Skriv et tal: "))
+if num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            print(num, "er ikke et primtal")
+            print(i, "gange", num // i, "er", num)
+            break
+    else:
+        print(num, "er et primtal")
+
+else:
+    print(num, "er ikke et primtal")
